@@ -1,0 +1,92 @@
+<!doctype html>
+<!--[if IE 9]><html class="ie9" lang="en"><![endif]-->
+<!--[if !(IE)]><!--><html lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>HRMS Mobile Apps - Approve Request Page</title>
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+<link type="text/css" rel="stylesheet" href="css/style.css" media="screen">
+<link type="text/css" rel="stylesheet" href="css/jquery.fancybox.css" media="screen">
+<script type="text/javascript" src="js/jquery-latest.js"></script>
+<script type="text/javascript" src="js/alert_notification.js"></script>
+ <script type="text/javascript" src="js/jquery.fancybox.js"></script>
+<script type="text/javascript" src="js/menu.js"></script>
+<script type="text/javascript" src="cordova-2.2.0.js"></script>
+<script type="text/javascript">
+		jQuery.extend(jQuery.mobile, { ajaxEnabled: false });
+		$('.fancybox').fancybox({closeBtn:false});
+		
+		 function onLoad() {
+        document.addEventListener("deviceready", onDeviceReady, false);
+    }
+    function onDeviceReady() {
+        document.addEventListener("backbutton", onBackKeyDown, false);
+    }
+
+    function onBackKeyDown() {
+    alert("Back button click");
+    }
+		
+</script>
+<style>
+			#canvas-holder{
+				width:20%;
+			}
+		</style>
+</head>
+
+<body onLoad="onLoad()">
+<div id="DashboardPage">
+	<div class="title">Dashboard</div>
+    <a href="javascript:void(0);" class="short_menu collapsed" title="Click to Toggle Menu"></a>
+    <div class="alert_notification">
+    </div>
+    <div class="alert_listing">
+    </div>
+    <nav class="left_menu">
+    </nav>
+	<div id="body">
+	    <div class="listing-view apply_req">
+        	<div class="tab_container">
+                <a target="1" id="tab1" class="select">Leave & Permission</a>
+            </div>
+            <div id="div1" class="leave_container tab_link" style="display:block">
+			<div class="legend_container txt_right">
+			<ul class="legend" id="legend3"> 
+				</ul>
+				</div>
+				<div class="legend_container">
+			<h2>Leave</h2>
+					<canvas id="leave_chart" width="300" height="200" />
+					</div>
+					<div class="legend_container">
+					<h2>Permission</h2>
+					<canvas id="permission_chart_id" width="300" height="200" />
+				<ul class="legend" id="legend4"> 
+				</ul>
+				<div class="clear"></div>
+				</div>
+			</div>
+   	</div>
+ </div>
+ 
+<link rel="stylesheet" href="css/dtpkr/jquery.mobile.datepicker.css" />
+<link rel="stylesheet" href="css/dtpkr/jquery.mobile.datepicker.theme.css" />
+<link rel="stylesheet" href="css/dtpkr/jquery.mobile-1.4.3.min.css" />
+<link rel="stylesheet" href="css/dtpkr/jqm-datebox.min.css" />
+<script type="text/javascript" src="js/dtpkr/datepicker.js"></script>
+<script type="text/javascript" src="js/dtpkr/jquery.mobile-git.js"></script> 
+<script type="text/javascript" src="js/dtpkr/jquery.mousewheel.min.js"></script>
+<script type="text/javascript" src="js/dtpkr/jqm-datebox.core.min.js"></script>
+<script type="text/javascript" src="js/dtpkr/jqm-datebox.mode.calbox.min.js"></script>
+<script type="text/javascript" src="js/dtpkr/jqm-datebox.mode.datebox.min.js"></script>
+<script type="text/javascript" src="js/dtpkr/jqm-datebox.mode.flipbox.min.js"></script>
+<script type="text/javascript" src="js/dtpkr/jqm-datebox.mode.durationbox.min.js"></script>
+<script type="text/javascript" src="js/dtpkr/jquery.mobile.datebox.i18n.en_US.utf8.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/Chart.js"></script>
+<script type="text/javascript" src="js/dashboard_employee.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
