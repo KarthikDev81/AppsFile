@@ -1,0 +1,37 @@
+<!doctype html>
+<!--[if IE 9]><html class="ie9" lang="en"><![endif]-->
+<!--[if !(IE)]><!--><html lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>HRMS - Mobile Apps Login Page</title>
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+<link type="text/css" rel="stylesheet" href="css/jquery.mobile-1.0rc1.min.css" media="screen">
+<link type="text/css" rel="stylesheet" href="css/style.css" media="screen">
+<script type="text/javascript" src="js/jquery-latest.js"></script>
+<script type="text/javascript" src="js/jquery.mobile-1.0rc1.min.js"></script>
+</head>
+
+<body>
+	<div id="login">
+    	<div class="login_container">
+        	<div class="logo"><img src="images/logo.jpg" alt="Agaram Logo"></div>
+        </div>
+        <div class="login_form">
+                <div class="login_div">
+                    <div class="login_container border_radius_10">
+                    	<label>Employee Id</label>
+                        <label class="form_field"><input type="text" id="username" class="login_txt_bx border_radius"></label>
+                    	<label>Password</label>
+                        <label class="form_field"><input type="password" id="password" class="login_txt_bx border_radius"></label>
+                    	<label><span class="txt_right"><button type="submit" id="login_btn" class="green_btn">Login</button></span><div class="clear"></div></label>
+                    	<label class="chk_bx"><input type="checkbox" onchange="document.getElementById('password').type = this.checked ? 'text' : 'password'"> Show Password</label>  
+                    	<label class="txt_center loadingimg"><img src="images/loader.gif" alt="Loader"></label>                  	
+                    </div>
+                </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/login.js"></script>
+</body>
+
+</html>
